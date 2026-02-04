@@ -4,7 +4,6 @@
  * The test file to test the Generic Stack
  */
 
-
 public class TestGenericStack {
     public static void main(String[] args) {
         // Test with Strings
@@ -38,7 +37,14 @@ public class TestGenericStack {
         //Test with empty list
         GenericStack<Double> doubleStack = new GenericStack<>();
         System.out.println("\nDouble Stack Is Empty: " + doubleStack.isEmpty());
+        try{
+            doubleStack.pop();
+        } catch (IndexOutOfBoundsException e){
+            System.out.println("Error! list is empty cannot pop " + e);
+        }
+
         System.out.println("Double Stack: " + doubleStack);
+
 
         //Test with doubles
         doubleStack.push(2.1);
