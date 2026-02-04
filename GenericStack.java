@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 /**
  * Lab: GenericStack
- * 
+ * Name: Karan Modi
  * A generic stack implementation using ArrayList.
  * Students will implement all methods.
  */
@@ -15,7 +15,7 @@ public class GenericStack<E> {
      * Hint: Add the element to the end of the list (top of stack).
      */
     public void push(E element) {
-        list.add(element); // add method to add to end of the list
+        list.add(element); // push method to add to end of the list
     }
     
     /**
@@ -41,7 +41,7 @@ public class GenericStack<E> {
      * Hint: Return the number of elements in the stack.
      */
     public int getSize() {
-        return list.size();
+        return list.size(); //returns of the size of the list
     }
     
     /**
@@ -50,10 +50,10 @@ public class GenericStack<E> {
      */
     public boolean isEmpty() {
         if (list.isEmpty()) {
-            return true;
+            return true; // is list is empty return true
         }
         else {
-            return false;
+            return false; //return false if the list is not empty
         }
     }
     

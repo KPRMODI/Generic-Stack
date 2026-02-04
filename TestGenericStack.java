@@ -1,14 +1,20 @@
+/**
+ * Lab: GenericStack
+ * Name: Karan Modi
+ * The test file to test the Generic Stack
+ */
 
 
 public class TestGenericStack {
     public static void main(String[] args) {
         // Test with Strings
         GenericStack<String> stringStack = new GenericStack<>();
-        stringStack.push("Hello");
+        stringStack.push("Hello"); //push values
         stringStack.push("World");
         stringStack.push("Java");
         
-        System.out.println("String Stack: " + stringStack);
+        // output of string stack after applying methods
+        System.out.println("String Stack: " + stringStack); 
         System.out.println("Peek: " + stringStack.peek());
         System.out.println("Pop: " + stringStack.pop());
         System.out.println("Size: " + stringStack.getSize());
@@ -21,6 +27,7 @@ public class TestGenericStack {
         intStack.push(20);
         intStack.push(30);
         
+        // output of integer stack after applying methods
         System.out.println("\nInteger Stack: " + intStack);
         System.out.println("Peek: " + intStack.peek());
         System.out.println("Pop: " + intStack.pop());
@@ -29,21 +36,23 @@ public class TestGenericStack {
         System.out.println("Is Empty: " + intStack.isEmpty());
 
         //Test with empty list
-        GenericStack<Boolean> booleanStack = new GenericStack<>();
-        System.out.println("\nIs Empty: " + booleanStack.isEmpty());
-        System.out.println("Boolean Stack: " + booleanStack);
+        GenericStack<Double> doubleStack = new GenericStack<>();
+        System.out.println("\nDouble Stack Is Empty: " + doubleStack.isEmpty());
+        System.out.println("Double Stack: " + doubleStack);
 
-        booleanStack.push(true);
-        booleanStack.push(false);
-        booleanStack.push(false);
+        //Test with doubles
+        doubleStack.push(2.1);
+        doubleStack.push(2.2);
+        doubleStack.push(6.7);
+        doubleStack.push(4.2);
+        doubleStack.push(20.21);
 
-        System.out.println("\nBoolean Stack: " + booleanStack);
-        System.out.println("Peek: " + booleanStack.peek());
-        System.out.println("Pop: " + booleanStack.pop());
-        System.out.println("Size: " + booleanStack.getSize());
-        System.out.println("After Pop: " + booleanStack);
-        System.out.println("Is Empty: " + booleanStack.isEmpty());
-
-
+        // output of double stack after applying methods
+        System.out.println("\nDouble Stack: " + doubleStack);
+        System.out.println("Peek: " + doubleStack.peek());
+        System.out.println("Pop: " + doubleStack.pop());
+        System.out.println("Size: " + doubleStack.getSize());
+        System.out.println("After Pop: " + doubleStack);
+        System.out.println("Is Empty: " + doubleStack.isEmpty());
     }
 }
